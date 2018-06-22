@@ -1,0 +1,53 @@
+.tabrow{
+
+    text-align: center;
+    list-style: none;
+    margin:20px 0 20px;
+    padding:0;
+    line-height: 35px;
+    height: 37px;
+    overflow: hidden;
+    font-size: 12px;
+    position: relative;
+}
+
+
+.tabrow li{
+
+    border:1px solid pink;
+    background: #d1d1;
+    background: linear-gradient(top, #ECECEC 50%, #d1d);
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.4)
+
+
+}
+
+.tabrow a{
+
+    color: rgb(167, 7, 7) ;
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+
+}
+
+.tabrow li.selected{
+
+    background: #fff;
+    color: #333;
+    z-index: 2;
+    border-top-color: #fff;
+}
+
+.cont {
+
+    background-color:  rgb(224, 125, 125);
+}
+
+

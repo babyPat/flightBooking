@@ -1,0 +1,53 @@
+ 
+ <div class= "look">
+<p>MAKE BOOKING</p>
+
+
+
+Name:<br>
+ <input type="text" name="firstName" [(ngModel)]= "firstName">
+ <br><br>
+ Surname:<br>
+ <input type="text" name="surname" [(ngModel)]= "surname">
+ <br><br>
+ Age:<br>
+ <input type="text" name="age" [(ngModel)]= "age">
+ <br><br>
+ Date:<br>
+ <input type="date" class="text" name="date" max="30-20-31" [(ngModel)]= "date">
+ <br> <br>
+
+ From:<br>
+ <select name="userSelect" [(ngModel)]="userSelect">
+  <option value="">--select--</option>
+  <option value=" JHB">JHB</option>
+  <option value=" PTA">PTA</option>
+  <option value=" KZN">KZN</option>
+  <option value=" Cape Town">Cape Town</option>
+ </select>
+
+ <br><br>
+
+ 
+ To:<br>
+ <select name="userSelect1" [(ngModel)]="userSelect1">
+  <option value="">--select--</option>
+  <option value=" JHB">JHB</option>
+  <option value=" PTA">PTA</option>
+  <option value=" KZN">KZN</option>
+  <option value=" Cape Town">Cape Town</option>
+ </select>
+ <br><br>
+
+ Depature time:<br>
+ <input type="time" class="text" name="time" max="hh:mm:ss"[(ngModel)] = "time">
+ <br><br>
+ Arrival time:<br>
+ <input type="time" class="text" name="time" max="hh:mm:ss"[(ngModel)] = "Atime">
+ <br><br>
+ 
+ <button type ="Submit" (click) = "onBooking()" value="Submit">Book</button>
+</div>
+
+<footer>CREATED BY PATRICIA</footer>
+<router-outlet></router-outlet>
